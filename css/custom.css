@@ -8539,7 +8539,7 @@ a {
   background-attachment: fixed; }
 
 .background {
-  background: url(../images/New-Images/Video_bg.png) no-repeat;
+  background: url(../images/Video_bg.png) no-repeat;
   padding: 20px;
   background-attachment: fixed;
   background-size: cover; 
