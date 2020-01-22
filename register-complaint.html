@@ -31,17 +31,18 @@
             
                                 <!-- The Nav Menu -->
                                 <nav class="nav navbar-expand-md position-absolute">
-                                    <a class="nav-item-custom" href="index.html"><span>Home</span></a>
+                                    <a class="nav-item-custom " href="index.html"><span>Home</span></a>
                                     <a class="nav-item-custom" href="about-us.html"><span>About Us</span></a>
                                     <a class="nav-item-custom" href="gallery.html"><span>Gallery</span></a> 
                                     <a class="nav-item-custom" href="social-work.html"><span>Social Work</span></a>
-                                    <a class="nav-item-custom" href="register-complaint.html"><span>Register Complaint</span></a>
+                                    <a class="nav-item-custom active" href="register-complaint.html"><span>Register Complaint</span></a>
                                     <a class="nav-item-custom" href="emergency-contact.html"><span>Emergency Contact</span></a>
                                     <a class="nav-item-custom" href="contact-us.html"><span>Contact Us</span></a>
+                                    
                                 </nav>
                             </div>
                             <div class="conatct-info">
-                                <a href="tel:967 336 3242">
+                                <a href="tel:9673363242">
                                     <i class="fas fa-phone"></i>
                                 <span> +91 967 336 3242</span>
                                 </a>
@@ -60,6 +61,18 @@
                                 <a href="https://www.instagram.com" target="_blank">
                                     <i class="fab fa-instagram"></i>
                                 </a>
+                            </div>
+                            <div class="language">
+                                <!-- Example single danger button -->
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Language
+                                    </button>
+                                    <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Marathi</a>
+                                    <a class="dropdown-item" href="#">Hindi</a>
+                                    <a class="dropdown-item" href="#">English</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -95,7 +108,7 @@
                         <div class="collapse navbar-collapse align-items-center justify-content-center" id="collapsibleNavbar">
                             <ul class="navbar-nav align-items-center" id="myDIV">
                                 <li class="nav-item">
-                                    <a class="nav-link " href="index.html">Home</a>
+                                    <a class="nav-link" href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="about-us.html">About Us</a>
@@ -121,6 +134,18 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="contact-us.html">Contact Us</a>
                                 </li>
+                                <li>
+                                    <!-- Example single danger button -->
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Language
+                                        </button>
+                                        <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Marathi</a>
+                                        <a class="dropdown-item" href="#">Hindi</a>
+                                        <a class="dropdown-item" href="#">English</a>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </nav>
@@ -134,17 +159,17 @@
             <div class="background-gradiant">
                 <div class="container ">
                     <div class="heading d-flex justify-content-center align-items-center">
-                        <h2>Register Complaint</h2>
+                        <h2 class="page-title">Register Complaint</h2>
                     </div>
                 </div>
             </div>
-            <div class="container mt-5 mb-5">
+            <div class="container mt-3 mt-sm-5 mb-3 mb-sm-5 ">
             <div class="row">
                 <div class="col-md-5">
                     <div class="profile-image text-center">
                         <img src="images/profile.png" alt="" width="">
                     </div>
-                    <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply dummyLorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy</p>
+                    <p class="text-center pt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply dummyLorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy</p>
                 </div>
                 <div class="col-md-7">
                     <form action="/action_page.php" >
@@ -152,15 +177,15 @@
                         <hr class="mt-0">
                         <div class="form-group">
                             <label for="email">Your Name:</label>
-                            <input type="text" class="form-control" id="email" placeholder="Enter Your Name">
+                            <input type="text" autocomplete="off" class="form-control" id="email" placeholder="Enter Your Name">
                         </div>
                         <div class="form-group email ml-0">
                             <label for="email">Email address:</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter Your Mail">
+                            <input type="email" autocomplete="off" class="form-control" id="email" placeholder="Enter Your Mail">
                         </div>
                         <div class="form-group subject ml-0">
                             <label for=" ">What Happened?</label>
-                            <textarea class="form-control" rows="5" id="" placeholder="Please Provide As Many details "></textarea>
+                            <textarea class="form-control" autocomplete="off" rows="5" id="" placeholder="Please Provide As Many details "></textarea>
                         </div>
                         <div class="form-group comment">
                             <label for="comment">How Can we make things right for you</label>

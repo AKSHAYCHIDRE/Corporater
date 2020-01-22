@@ -9,12 +9,14 @@
 * {
     box-sizing: border-box;
   }
-$primary:#f27e01;
-$secondary:#00923f;
-$button-hover-color:#bf6300;
+$primary:#00923f; 
+$button-hover-color:#68a06e;
 $link-color:$primary;
 $white-color:#fff;
+$secondry: #ff8f2e;
+$tertiary: #13691b;  
 $black-color: #000;
+$primary-gradiant: linear-gradient(112deg, #fff 0%, #faf3ec 6%, #209209 100%);
 
 @font-face {
     font-family: Montserrat-Regular;
@@ -57,6 +59,37 @@ hr{
     background-color: $primary;
     height: 2px;
 }
+.page-title{
+    color: $white-color;
+}
+.btn-secondary{
+    background-color: $tertiary;
+    border:  $tertiary;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 12px 24px;
+    &:hover{
+        border-color: $secondry;
+        background-color: $secondry;  
+    }
+}
+    
+.dropdown-item{
+    &:hover{
+        color: $white-color;
+        text-decoration: none;
+        background-color: $primary;
+    }
+}
+.navbar-expand-md{
+    .navbar-nav{
+        .dropdown-menu{
+            margin: 0;
+            padding: 0;
+            outline: 0;
+        }
+    } 
+} 
 .btn-primary {
     background-color: $primary;
     border:  $primary;
@@ -72,7 +105,7 @@ hr{
     
 }
 .read-more-button{
-    color:#fa7100;
+    color:$primary;
     font-size: 15px;
     &:hover{
         color: $black-color;
@@ -97,9 +130,24 @@ a{
       
     }
 }
+.btn-secondary:not(:disabled):not(.disabled):active:focus, 
+.btn-secondary:not(:disabled):not(.disabled).active:focus, 
+.show > .btn-secondary.dropdown-toggle:focus,
+.show > .btn-secondary.dropdown-toggle{
+    outline: 0;
+    box-shadow: none;
+    color: $white-color;
+    background-color: $secondry;
+    border-color: $secondry;
+    
+}
+
 // Top Bar
+.language {
+    display: none;
+}
 .topbar-bg-color{
-    background-color:$black;
+    background-color:$secondry;
     padding: 8px 0;
 }
 .conatct-info,.social-link {
@@ -172,6 +220,9 @@ a{
 .left-logo {
     display: none;
 }
+#toggle:checked ~ .nav .nav-item-custom.active{
+    color: $primary;
+}
     .navbar-nav{
         .nav-item{
             .active{
@@ -183,6 +234,7 @@ a{
                 font-size: 14px;
                 margin-right: 15px;
                 font-weight: 600;
+                padding:11px 8px;
                 transition: 0.3s;
                 border-bottom: 3px solid transparent;
                 &:hover{
@@ -249,9 +301,10 @@ a {
     .nav-item-custom {
       color:$white;
       letter-spacing: 0;
-      height: 30px;
+      height: 35px;
       line-height: 40px;
       margin-top: 0;
+      font-weight: bold;
       display: block;
       opacity: 1;
       transform: scaleY(1);
@@ -279,7 +332,7 @@ a {
         text-decoration: none;
     }
     span{
-        font-size: 14px;
+        font-size: 15px;
     }
     }
   }
@@ -324,7 +377,7 @@ a {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color:$primary;
+    background-color:$white-color;
     border-radius: 5px;
     transition: $transition-duration;
   }
@@ -398,7 +451,7 @@ a {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color:$primary;
+    background-color:$white-color;
     transform: translateY(-50%) scaleY(5);
     transition: $transition-duration;
   }
@@ -428,13 +481,15 @@ a {
     }
 }
 .background-image{
-    background: url(../images/background.png) no-repeat; 
+    background: url(../images/background.png) no-repeat;
     background-position: 50% 50%;
     background-attachment: fixed;
 }
 .background{
-    background: url(../images/2.jpg) no-repeat; 
+    background: url(../images/Video_bg.png) no-repeat;
     padding: 20px;
+    background-attachment: fixed;
+    background-size: cover; 
 }
 //  video-section
 .video-section{
@@ -525,8 +580,9 @@ form{
     .form-group{
         flex: 45%;
         .form-control:focus{
-           border-color:#ced4da;
+           border-color:$primary;
            box-shadow: none;   
+           outline: 1px;
        }
       
     }
@@ -587,8 +643,9 @@ footer{
             }
         }
     }
-    .footer-logo{
-        width: 55%;
+    .footer-wrapper{
+        display: flex;
+        justify-content: space-between;
     }
     .download{
         h4{
@@ -624,8 +681,8 @@ footer{
 }
 //
 .background-gradiant{
-    background: rgb(250,113,0);
-    background: linear-gradient(112deg, rgba(250,113,0,1) 0%, rgba(250,243,236,1) 46%, rgba(22,122,2,1) 100%);
+    
+    background: $primary-gradiant;
     } 
 /* ===================About Us Page=================*/
 .about-us-wrapper{
@@ -771,7 +828,7 @@ footer{
     position: fixed;
     width: 100%;
     z-index: 999;
-    background:$secondary;
+    background:$primary;
     color: white;
     transition: all 0.5s;
 }
@@ -791,6 +848,49 @@ footer{
 }
 @media screen and (max-width: 992px){
     
+    // topbar css
+
+    .top-bar-info {
+        padding: 0;
+        .social-link{
+            display: none;
+        }
+        .language{
+            display: block;
+
+        }
+        .button-toggle{
+            top: -4px;
+        }
+        .btn-secondary {
+            padding: 6px 0;
+            background-color: transparent;
+            border-color: transparent;
+            
+        }
+        .dropdown-item{
+            font-size: 14px;
+        }
+        .dropdown-menu.show{
+            transform:translate3d(-58px, 39px, 0px) !important;
+        }
+    }    
+    .about-us{
+        margin: 30px 0;
+    }
+    .video-section {
+        margin-bottom: 30px;
+    }
+    .candidate-bar {
+        display: flex;
+        justify-content: space-between;
+        .right-site{
+            a{
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
     .custom-nav{
         display: block;
     }
@@ -802,9 +902,6 @@ footer{
     .recent-activity{
         padding-top: 0;
     }
-    // .container{
-    //     width:95%!important;
-    // }
     .menu{
         .container{
             position: absolute;
@@ -825,14 +922,17 @@ footer{
     }
     .top-bar{
         nav{
-            top: -9px;
+            top: -6px;  
             // margin: 0;
             z-index: 999;
             
         }
         .button-toggle{
-            top:-8px;
+            top:-4px;
             left: -11px;
+            &:hover{
+                box-shadow: none;
+            }
         }
         .conatct-info{
             display: none;
@@ -917,9 +1017,18 @@ footer{
         }
     }
     .candidate-bar{
-        justify-content: space-evenly;
-        .right-site{
+        justify-content: space-between;
+        .left-site{
             display: none;
+        }
+    }
+    // recent-activity
+    .recent-activity{
+        .order{
+            order: 2;
+        }
+        .recent-activity-desciption{
+            margin:15px 0;
         }
     }
 }
@@ -959,6 +1068,29 @@ footer{
             width: 60px;
         }
     }
+    .candidate-bar{
+        justify-content: space-around;
+        .candidate-topbar__name img{
+            height: 50px;
+            width: 50px;
+        }
+        .logo{
+            width: 40%;
+        }
+        .candidate-name{
+            font-size: 16px;
+        }
+        .left-site{
+            display: none;
+        }
+        .right-site {
+            display: block; 
+            a{
+                display: flex;
+                justify-content: flex-end;
+            }
+        }   
+    }
     // About Us
     .about-us{
         .description{
@@ -987,8 +1119,9 @@ footer{
     .about-us{
         margin-top: 0;
         .description{
-            margin-top: 50px;
+            margin-top: 30px;
         }
+        
     }
     //video-section
     .video-section{
@@ -998,15 +1131,7 @@ footer{
             }
         }
     }
-    // recent-activity
-    .recent-activity{
-        .order{
-            order: 2;
-        }
-        .recent-activity-desciption{
-            margin:15px 0;
-        }
-    }
+    
     // gallery 
     .gallery {
         padding-top: 39px;
@@ -1056,6 +1181,7 @@ footer{
                 display: none;
             }
         }
+
         
 }
 @media screen and (max-width: 480px){
