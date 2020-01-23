@@ -8267,15 +8267,17 @@ hr {
   border: #13691b;
   border-radius: 3px;
   font-size: 14px;
-  padding: 12px 24px; }
+  padding: 13px 24px; }
   .btn-secondary:hover {
     border-color: #ff8f2e;
     background-color: #ff8f2e; }
 
-.dropdown-item:hover {
-  color: #fff;
-  text-decoration: none;
-  background-color: #00923f; }
+.dropdown-item {
+  font-size: 14px; }
+  .dropdown-item:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #00923f; }
 
 .navbar-expand-md .navbar-nav .dropdown-menu {
   margin: 0;
@@ -8569,8 +8571,6 @@ a {
     background-color: #0693e3;
     color: white;
     box-shadow: -8px 17px 24px -12px rgba(0, 0, 0, 0.75); }
-  .about-us img {
-    margin-left: 20px; }
   .about-us .description {
     margin-left: 3%; }
 
@@ -8757,11 +8757,15 @@ footer {
   padding-top: 39px; }
   .social-work-details span {
     color: #00923f; }
-  .social-work-details .facebook-post {
-    -webkit-box-shadow: -4px 7px 20px -2px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: -4px 7px 20px -2px rgba(0, 0, 0, 0.15);
-    box-shadow: -4px 7px 20px -2px rgba(0, 0, 0, 0.15);
+  .social-work-details .sidebar {
+    -webkit-box-shadow: -4px 7px 20px -2px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: -4px 7px 20px -2px rgba(0, 0, 0, 0.08);
+    box-shadow: -4px 7px 20px -2px rgba(0, 0, 0, 0.08);
     padding: 22px; }
+    .social-work-details .sidebar ul {
+      padding-left: 20px; }
+      .social-work-details .sidebar ul li {
+        padding: 5px 0; }
   .social-work-details .twitter-btn {
     background: #1b95e0;
     font-size: 14px;
@@ -8851,10 +8855,10 @@ footer {
       padding: 6px 0;
       background-color: transparent;
       border-color: transparent; }
-    .top-bar-info .dropdown-item {
-      font-size: 14px; }
     .top-bar-info .dropdown-menu.show {
       transform: translate3d(-58px, 39px, 0px) !important; }
+  .sidebar-wrapper {
+    display: none; }
   .about-us {
     margin: 30px 0; }
   .video-section {
@@ -8898,11 +8902,7 @@ footer {
     padding: 6px 19px;
     margin-bottom: 15px; }
   .top-bar .recent-activity .recent-activity-desciption button {
-    margin-bottom: 20px; }
-  .top-bar footer .footer-logo {
-    width: 100%; }
-  .top-bar footer .google-play {
-    margin-bottom: 10px; } }
+    margin-bottom: 20px; } }
 
 @media screen and (max-width: 992px) and (max-width: 768px) {
   .menu nav {
@@ -8927,8 +8927,20 @@ footer {
     margin-top: 20px; }
     .recent-activity .recent-activity-desciption button {
       margin-bottom: 15px; }
+  footer .footer-wrapper {
+    justify-content: space-around; }
   footer .footer-logo {
-    width: 100%; }
+    display: none; }
+  footer .download {
+    justify-content: center;
+    display: flex; }
+    footer .download h4 {
+      text-align: center; }
+    footer .download .google-play {
+      margin-right: 0; }
+  footer .quick-link .navbar-nav .nav-item .nav-link {
+    margin-right: 0;
+    padding: 11px 1px; }
   .candidate-bar {
     justify-content: space-between; }
     .candidate-bar .left-site {
@@ -8936,7 +8948,11 @@ footer {
   .recent-activity .order {
     order: 2; }
   .recent-activity .recent-activity-desciption {
-    margin: 15px 0; } }
+    margin: 15px 0; }
+  .contact-us-wrapper .contact-form .container {
+    width: 100%; }
+  .contact-us-wrapper .heading-info p {
+    width: 100%; } }
 
 @media screen and (max-width: 992px) and (max-width: 576px) {
   .top-bar .top-bar-info .conatct-info a {
@@ -8983,8 +8999,6 @@ footer {
     left: 0;
     width: 90%;
     right: 0; }
-  .container {
-    width: 100%; }
   .about-us {
     margin-top: 0; }
     .about-us .description {
@@ -9002,8 +9016,6 @@ footer {
       flex: 100%; }
     .contact-us form .email, .contact-us form .subject {
       margin-left: 0; }
-  footer .footer-follow, footer .download {
-    margin-top: 15px; }
   footer .download .google-play {
     margin-bottom: 5px; }
   .contact-us-wrapper form .form-group {
@@ -9022,8 +9034,8 @@ footer {
   .candidate-bar {
     justify-content: space-around; }
     .candidate-bar .candidate-topbar__name img {
-      height: 50px;
-      width: 50px; }
+      height: 60px;
+      width: 60px; }
     .candidate-bar .logo {
       width: 40%; }
     .candidate-bar .candidate-name {
@@ -9047,7 +9059,18 @@ footer {
   .latest-news {
     margin-bottom: 30px; }
   .follow {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  footer .footer-wrapper {
+    padding: 0 15px;
+    flex-direction: column; }
+    footer .footer-wrapper .download {
+      justify-content: flex-start; }
+      footer .footer-wrapper .download h4 {
+        text-align: left; }
+    footer .footer-wrapper .footer-follow {
+      margin-top: 15px; }
+    footer .footer-wrapper .download {
+      margin-top: 20px; } }
 
 @media screen and (max-width: 992px) and (max-width: 375px) {
   h2 {
@@ -9097,9 +9120,5 @@ footer {
     margin: 0; }
   form button {
     margin-top: 15px; }
-  footer .footer-logo {
-    width: 100%; }
   footer .footer-follow, footer .download {
-    margin-top: 15px; }
-  footer .download .google-play {
-    margin-bottom: 5px; } }
+    margin-top: 15px; } }

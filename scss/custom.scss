@@ -67,7 +67,7 @@ hr{
     border:  $tertiary;
     border-radius: 3px;
     font-size: 14px;
-    padding: 12px 24px;
+    padding: 13px 24px;
     &:hover{
         border-color: $secondry;
         background-color: $secondry;  
@@ -75,6 +75,7 @@ hr{
 }
     
 .dropdown-item{
+    font-size: 14px;
     &:hover{
         color: $white-color;
         text-decoration: none;
@@ -473,9 +474,7 @@ a {
         color: white;
         box-shadow: -8px 17px 24px -12px rgba(0,0,0,0.75);
     }
-    img{
-        margin-left: 20px;;
-    }
+    
     .description {
         margin-left: 3%;
     }
@@ -734,11 +733,17 @@ footer{
     span{
         color: $primary;
     }
-    .facebook-post{
-        -webkit-box-shadow: -4px 7px 20px -2px rgba(0,0,0,0.15);
-        -moz-box-shadow: -4px 7px 20px -2px rgba(0,0,0,0.15);
-        box-shadow: -4px 7px 20px -2px rgba(0,0,0,0.15);
+    .sidebar{
+        -webkit-box-shadow: -4px 7px 20px -2px rgba(0, 0, 0, 0.08);
+        -moz-box-shadow: -4px 7px 20px -2px rgba(0, 0, 0, 0.08);
+        box-shadow: -4px 7px 20px -2px rgba(0, 0, 0, 0.08);
         padding: 22px;
+            ul{
+                padding-left: 20px;
+                li{
+                    padding: 5px 0;
+                }
+            }
     }
     .twitter-btn{
         background: #1b95e0;
@@ -748,6 +753,7 @@ footer{
             background: #0c7abf;
         }
     }
+    
 }
 /* ===================Contact Us Page=================*/
 .contact-us-wrapper{
@@ -868,13 +874,13 @@ footer{
             border-color: transparent;
             
         }
-        .dropdown-item{
-            font-size: 14px;
-        }
         .dropdown-menu.show{
             transform:translate3d(-58px, 39px, 0px) !important;
         }
     }    
+    .sidebar-wrapper{
+        display: none;
+    }
     .about-us{
         margin: 30px 0;
     }
@@ -955,15 +961,8 @@ footer{
         }
     }
   } 
-  //footer
-  footer{
-    .footer-logo{
-        width: 100%;
-    }
-    .google-play{
-        margin-bottom: 10px;
-    }
-  }
+  
+  
 }
 @media screen and (max-width: 768px){
 
@@ -1012,10 +1011,33 @@ footer{
         }
     } 
     footer{
-        .footer-logo{
-            width: 100%;
+        .footer-wrapper{
+            justify-content: space-around;
         }
-    }
+        .footer-logo{
+            display: none;
+        }
+        .download{
+            justify-content: center;
+            display: flex;
+            h4{
+                text-align: center;
+            }
+            .google-play{
+                margin-right: 0;
+            }
+        }    
+        .quick-link{
+            .navbar-nav{
+                .nav-item{
+                    .nav-link{
+                        margin-right: 0;
+                        padding: 11px 1px;
+                    }  
+                }
+            }
+        }
+      }
     .candidate-bar{
         justify-content: space-between;
         .left-site{
@@ -1029,6 +1051,18 @@ footer{
         }
         .recent-activity-desciption{
             margin:15px 0;
+        }
+    }
+    .contact-us-wrapper {
+        .contact-form{
+            .container{
+                width: 100%;
+            }
+        }
+        .heading-info{
+            p{
+                width: 100%;
+            }
         }
     }
 }
@@ -1113,9 +1147,7 @@ footer{
     }
  
     //About Us
-    .container{
-        width: 100%;
-    }
+    
     .about-us{
         margin-top: 0;
         .description{
@@ -1154,9 +1186,7 @@ footer{
             }
         }
         footer{
-            .footer-follow, .download{
-                margin-top: 15px;
-            }
+            
             .download {
                 .google-play{
                     margin-bottom: 5px;
@@ -1174,6 +1204,7 @@ footer{
                     margin-top: 15px;
                 }
             }
+            
         }
         .contact-us{
             margin-bottom: 30px; 
@@ -1191,8 +1222,8 @@ footer{
     .candidate-bar{
         justify-content: space-around;
         .candidate-topbar__name img{
-            height: 50px;
-            width: 50px;
+            height: 60px;
+            width: 60px;
         }
         .logo{
             width: 40%;
@@ -1230,6 +1261,26 @@ footer{
     .follow{
         margin-bottom: 30px;
     }
+    footer{
+        .footer-wrapper{
+            padding: 0 15px;
+            flex-direction: column;
+            .download{
+                justify-content: flex-start;
+                    h4{
+                        text-align: left;
+                    }               
+            }
+            .footer-follow{
+                margin-top: 15px;
+            }
+            .download{
+                margin-top: 20px;
+            }
+        }
+    }
+    
+    
    
 }
 @media screen and (max-width: 375px){
@@ -1341,18 +1392,10 @@ footer{
         }
  
     // Footer
-    footer{
-        .footer-logo{
-            width: 100%;
-        }
+    footer{        
         .footer-follow, .download{
             margin-top: 15px;
-        }
-        .download {
-            .google-play{
-                margin-bottom: 5px;
-            }
-        }
+        }        
     }
   }
 }
