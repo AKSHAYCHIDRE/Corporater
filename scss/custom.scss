@@ -280,7 +280,7 @@ a {
 #toggle:checked {
   //Any element you need to change the style if menu is open goes here, using the sibling selector (~)
   & ~ .toggle-container .button-toggle {
-        box-shadow: 0 0 0 550px rgba(0, 0, 0, 0.63), inset 0 0 0 550px rgba(0, 0, 0, 0.63);
+        box-shadow: 6px 0 0 550px rgba(0, 0, 0, 0.63), inset 5px 5px 5px 550px rgba(0, 0, 0, 0.63);
     z-index: 999;
     height: 100vh;
     &:before {
@@ -702,9 +702,9 @@ footer{
 .socila-work-wrapper{
     padding-top: 39px;
     .post{
-        -webkit-box-shadow: -1px -3px 49px -1px rgba(0,0,0,0.23);
-        -moz-box-shadow: -1px -3px 49px -1px rgba(0,0,0,0.23);
-        box-shadow: -1px -3px 49px -1px rgba(0,0,0,0.23);
+        -webkit-box-shadow: -1px -3px 49px -1px rgba(0, 0, 0, 0.11);
+        -moz-box-shadow: -1px -3px 49px -1px rgba(0, 0, 0, 0.11);
+        box-shadow:-1px -3px 49px -1px rgba(0, 0, 0, 0.11);
         padding: 22px;
         a{
             font-size: 14px;
@@ -877,7 +877,13 @@ footer{
         .dropdown-menu.show{
             transform:translate3d(-58px, 39px, 0px) !important;
         }
+        .dropdown-item{
+            text-align: center;
+        }
     }    
+    .blog-title{
+        line-height: 30px;
+    }
     .sidebar-wrapper{
         display: none;
     }
@@ -887,8 +893,12 @@ footer{
     .video-section {
         margin-bottom: 30px;
     }
+    .gallery {
+        margin-bottom: 0;
+    }
     .candidate-bar {
         display: flex;
+        align-items: center;
         justify-content: space-between;
         .right-site{
             a{
@@ -1166,7 +1176,8 @@ footer{
     
     // gallery 
     .gallery {
-        padding-top: 39px;
+        padding-top: 0;
+        margin-top: 25px;
         img{
             margin-top: 10px;
             margin-bottom: 15px;
@@ -1241,6 +1252,9 @@ footer{
                 justify-content: flex-end;
             }
         }   
+    }
+    .latest-news{
+        margin-bottom: 30px;
     }
     .about-us{
         margin: 30px 0;
