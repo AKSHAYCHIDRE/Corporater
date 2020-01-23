@@ -8357,7 +8357,8 @@ a {
     height: 80px;
     width: 80px; }
   .candidate-bar .logo {
-    width: 60%; }
+    width: 60%;
+    height: auto; }
   .candidate-bar .candidate-name {
     font-size: 24px; }
 
@@ -8723,7 +8724,7 @@ footer {
     margin-top: 0; }
 
 .heading {
-  padding: 30px; }
+  padding: 30px 0; }
 
 /* ===================Galley Page=================*/
 .gallery-wrapper {
@@ -8971,8 +8972,6 @@ footer {
     font-size: 13px; }
   .candidate-bar .candidate-name {
     font-size: 21px; }
-  .candidate-bar .logo {
-    width: 50%; }
   .candidate-bar .candidate-topbar__name img {
     border-radius: 50%;
     margin-right: 10px;
@@ -8984,7 +8983,8 @@ footer {
       height: 50px;
       width: 50px; }
     .candidate-bar .logo {
-      width: 40%; }
+      width: 40%;
+      height: auto; }
     .candidate-bar .candidate-name {
       font-size: 16px; }
     .candidate-bar .left-site {
@@ -9010,13 +9010,14 @@ footer {
     margin-top: 0; }
     .about-us .description {
       margin-top: 30px; }
+  .page-title {
+    font-size: 28px; }
   .video-section .video-info h3 {
     font-size: 36px; }
   .gallery {
     padding-top: 0;
     margin-top: 25px; }
     .gallery img {
-      margin-top: 10px;
       margin-bottom: 15px; }
   .contact-us {
     margin-bottom: 0; }
@@ -9045,7 +9046,8 @@ footer {
       height: 60px;
       width: 60px; }
     .candidate-bar .logo {
-      width: 40%; }
+      width: 40%;
+      height: auto; }
     .candidate-bar .candidate-name {
       font-size: 16px; }
     .candidate-bar .left-site {

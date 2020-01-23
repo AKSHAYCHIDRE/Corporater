@@ -181,6 +181,7 @@ a{
     }
     .logo{
         width: 60%;
+        height: auto;
     }
     .candidate-name {
         font-size:24px;
@@ -692,7 +693,7 @@ footer{
     }    
 } 
 .heading{
-    padding: 30px;
+    padding: 30px 0;
 }
 /* ===================Galley Page=================*/
 .gallery-wrapper {
@@ -1102,9 +1103,6 @@ footer{
         .candidate-name{
             font-size: 21px;
         }
-        .logo{
-            width: 50%;
-        }
         .candidate-topbar__name img{
             border-radius: 50%;
             margin-right: 10px;
@@ -1120,6 +1118,7 @@ footer{
         }
         .logo{
             width: 40%;
+            height: auto;
         }
         .candidate-name{
             font-size: 16px;
@@ -1155,7 +1154,7 @@ footer{
             right: 0;
         }
     }
- 
+    
     //About Us
     
     .about-us{
@@ -1164,6 +1163,9 @@ footer{
             margin-top: 30px;
         }
         
+    }
+    .page-title{
+        font-size: 28px;
     }
     //video-section
     .video-section{
@@ -1179,7 +1181,7 @@ footer{
         padding-top: 0;
         margin-top: 25px;
         img{
-            margin-top: 10px;
+            // margin-top: 10px;
             margin-bottom: 15px;
         }
     }
@@ -1238,6 +1240,7 @@ footer{
         }
         .logo{
             width: 40%;
+            height: auto;
         }
         .candidate-name{
             font-size: 16px;
