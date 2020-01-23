@@ -8983,8 +8983,8 @@ footer {
       height: 50px;
       width: 50px; }
     .candidate-bar .logo {
-      width: 40%;
-      height: auto; }
+      width: 100px;
+      height: 90px; }
     .candidate-bar .candidate-name {
       font-size: 16px; }
     .candidate-bar .left-site {
@@ -9041,13 +9041,13 @@ footer {
   p {
     text-align: justify; }
   .candidate-bar {
-    justify-content: space-around; }
+    justify-content: space-between; }
     .candidate-bar .candidate-topbar__name img {
       height: 60px;
       width: 60px; }
     .candidate-bar .logo {
-      width: 40%;
-      height: auto; }
+      width: 70px;
+      height: 70px; }
     .candidate-bar .candidate-name {
       font-size: 16px; }
     .candidate-bar .left-site {
@@ -9067,7 +9067,7 @@ footer {
     padding-top: 0;
     margin: 20px 0; }
     .gallery img {
-      margin-bottom: 0; }
+      margin-bottom: 15px; }
   .latest-news {
     margin-bottom: 30px; }
   .follow {

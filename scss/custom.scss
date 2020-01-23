@@ -1117,8 +1117,8 @@ footer{
             width: 50px;
         }
         .logo{
-            width: 40%;
-            height: auto;
+            width: 100px;
+            height: 90px;
         }
         .candidate-name{
             font-size: 16px;
@@ -1233,14 +1233,14 @@ footer{
         text-align: justify;
     }
     .candidate-bar{
-        justify-content: space-around;
+        justify-content: space-between;
         .candidate-topbar__name img{
             height: 60px;
             width: 60px;
         }
         .logo{
-            width: 40%;
-            height: auto;
+            width: 70px;
+            height: 70px;
         }
         .candidate-name{
             font-size: 16px;
@@ -1269,7 +1269,7 @@ footer{
         padding-top: 0;
         margin: 20px 0;
         img{
-            margin-bottom: 0;
+            margin-bottom: 15px;
         }
     }
     .latest-news{
