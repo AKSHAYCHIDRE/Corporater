@@ -1,0 +1,15 @@
+{
+  "name": "corporator-bjp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass scss/custom.scss css/custom.css --watch"
+  },
+  "author": "pravin",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "node-sass": "^4.13.0"
+  }
+}
