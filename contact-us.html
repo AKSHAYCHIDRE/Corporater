@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900&display=swap" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <link rel="icon"  href="images/logo.png">
-        <link rel="stylesheet" href="css/custom.css">
-        <title>Contact Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="icon"  href="images/favicon.png">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css"> 
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <title> Contact Us | Aditya Thackeray</title>
 </head>
 <body>
     <main>
         <header>
             <!-- Top Bar Start Here-->
-            <section class=" top-bar topbar-bg-color">
+            <section class=" top-bar top-bar-sticky" id="topbar-fixed">
                 <div class="container">
                     <div class="top-bar-info">
                         <div class="d-flex justify-content-between">
@@ -31,13 +27,14 @@
             
                                 <!-- The Nav Menu -->
                                 <nav class="nav navbar-expand-md position-absolute">
-                                    <a class="nav-item-custom" href="index.html"><span>Home</span></a>
+                                    <a class="nav-item-custom " href="index.html"><span>Home</span></a>
                                     <a class="nav-item-custom" href="about-us.html"><span>About Us</span></a>
-                                    <a class="nav-item-custom" href="gallery.html"><span>Gallery</span></a> 
+                                    <a class="nav-item-custom " href="gallery.html"><span>Gallery</span></a> 
                                     <a class="nav-item-custom" href="social-work.html"><span>Social Work</span></a>
                                     <a class="nav-item-custom" href="register-complaint.html"><span>Register Complaint</span></a>
                                     <a class="nav-item-custom" href="emergency-contact.html"><span>Emergency Contact</span></a>
-                                    <a class="nav-item-custom" href="contact-us.html"><span>Contact Us</span></a>
+                                    <a class="nav-item-custom active" href="contact-us.html"><span>Contact Us</span></a>
+                                    
                                 </nav>
                             </div>
                             <div class="conatct-info">
@@ -45,9 +42,9 @@
                                     <i class="fas fa-phone"></i>
                                 <span> +91 967 336 3242</span>
                                 </a>
-                                <a href="mailto:devendra@gmail.com">
+                                <a href="mailto:aditya@gmail.com">
                                     <i class="fas fa-envelope"></i>
-                                <span> devendra@gmail.com</span>
+                                <span> aditya@gmail.com</span>
                                 </a>
                             </div>
                             <div class="social-link ">
@@ -61,6 +58,18 @@
                                     <i class="fab fa-instagram"></i>
                                 </a>
                             </div>
+                            <div class="language">
+                                <!-- Example single danger button -->
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Language
+                                    </button>
+                                    <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Marathi</a>
+                                    <a class="dropdown-item" href="#">Hindi</a>
+                                    <a class="dropdown-item" href="#">English</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -69,25 +78,25 @@
             <section class=" candidate-bar p-2">
                 <div class="left-site">
                     <a href="index.html">
-                        <img src="images/logo.png" alt="" class="logo" >
+                        <img src="images/logo.png" alt="Logo" class="logo" >
                     </a>
                 </div>
                 <div class="candidate-topbar__name d-flex left-site align-items-center">
                     <img src="images/profile.png" class="candidate-profile" alt="candidate profile">
-                    <h2 class="candidate-name">Devendra Fadnavis</h2>
+                    <h2 class="candidate-name">Aditya Thackeray</h2>
                 </div>
                 <div class="right-site">
                     <a href="index.html">
-                        <img src="images/logo.png" alt="" class="logo" >
+                        <img src="images/logo.png" alt="Logo" class="logo" >
                     </a>
                 </div>
             </section>
             <!-- Navigation Start Here -->
-            <section class="menu nav-menu">
+            <section class=" nav-menu-stiky" id="fixed">
                 <div class="container">
                     <nav class="navbar navbar-expand-md  navbar-dark justify-content-center p-0">     
                         <a class="navbar-brand left-logo m-0" href="index.html ">
-                            <img src="images/footer-logo.png" alt="" width="100px">
+                            <img src="images/footer-logo.png" alt="Footer Logo" >
                         </a>
                         <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                             <i class="fas fa-bars"></i>
@@ -95,10 +104,10 @@
                         <div class="collapse navbar-collapse align-items-center justify-content-center" id="collapsibleNavbar">
                             <ul class="navbar-nav align-items-center" id="myDIV">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="index.html">Home</a>
+                                    <a class="nav-link " href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " href="about-us.html">About Us</a>
+                                    <a class="nav-link" href="about-us.html">About Us</a>
                                 </li>
                                 <!-- Dropdown -->
                                 <li class="nav-item dropdown">
@@ -116,10 +125,22 @@
                                     <a class="nav-link" href="register-complaint.html">Register Complaint</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " href="emergency-contact.html">Emergency Contact</a>
+                                    <a class="nav-link" href="emergency-contact.html">Emergency Contact</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link  active" href="contact-us.html">Contact Us</a>
+                                    <a class="nav-link active" href="contact-us.html">Contact Us</a>
+                                </li>
+                                <li>
+                                    <!-- Example single danger button -->
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Language
+                                        </button>
+                                        <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Marathi</a>
+                                        <a class="dropdown-item" href="#">Hindi</a>
+                                        <a class="dropdown-item" href="#">English</a>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -134,120 +155,122 @@
             <div class="background-gradiant">
                 <div class="container ">
                     <div class="heading d-flex justify-content-center align-items-center">
-                        <h2>Contact Us</h2>
+                        <h2 class="page-title">Contact Us</h2>
                     </div>
                 </div>
             </div>
-            <div class="container mt-5 mb-5">
-                <div class="heading-info">
-                    <h2 class="text-center">Reach Us</h2>
-                    <hr>
-                    <p class="text-center"> Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy</p>
-                </div>
-                <div class="row mt-5">
-                    <div class="col-md-4 col-sm-4">
-                        <div class="address text-center">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <h4>Office Address</h4>
-                            <p>1229, Sinhgad Road,Pune</p>
-                        </div>
+            <div class="container" data-aos="fade-up">
+                <div class=" mt-40 mb-40">
+                    <div class="heading-info">
+                        <h2 class="text-center section-title">Reach Us</h2>
+                        
+                        <p class="text-center text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy</p>
                     </div>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="phone text-center">
-                                <i class="fas fa-phone"></i>
-                            <h4>Phone</h4>
-                            <a href="tel:9673363242">
-                                +91 967 336 3242
-                            </a>
+                    <div class="row mt-3 mt-md-5">
+                        <div class="col-md-4 col-sm-4">
+                            <div class="address text-center">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h4 class="sm-heading">Office Address</h4>
+                                <p class="text-center">1229, Sinhgad Road,Pune</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="email-info text-center">
-                                <i class="fas fa-envelope"></i>
-                            <h4>Email Address</h4>
-                            <a href="mailto:devendra@gmail.com">
-                                devendra@gmail.com
-                            </a>
+                        <div class="col-md-4 col-sm-4 mb-4 mb-sm-0">
+                            <div class="phone text-center">
+                                    <i class="fas fa-phone"></i>
+                                <h4 class="sm-heading">Phone</h4>
+                                <a href="tel:9673363242">
+                                    +91 967 336 3242
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="email-info text-center">
+                                    <i class="fas fa-envelope"></i>
+                                <h4 class="sm-heading">Email Address</h4>
+                                <a href="mailto:aditya@gmail.com">
+                                    aditya@gmail.com
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-                <div class="contact-form mb-5">
-                  <div class="container">
-                    <h2 class="text-center mt-5">Get In Touch</h2>
-                    <hr class="mt-0">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <form action="/action_page.php" class="d-flex flex-wrap">
-                                <div class="form-group">
-                                    <label for="email">Your Name:</label>
-                                    <input type="text" class="form-control" id="email">
-                                </div>
-                                <div class="form-group email">
-                                    <label for="email">Email address:</label>
-                                    <input type="email" class="form-control" id="email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Phone No:</label>
-                                    <input type="text" class="form-control" id="email">
-                                </div>
-                                <div class="form-group subject">
-                                    <label for="pwd">Subject:</label>
-                                    <input type="subject" class="form-control" id="pwd">
-                                </div>
-                                <div class="form-group comment">
-                                    <label for="comment">Comment:</label>
-                                    <textarea class="form-control" rows="5" id="comment"></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                            </form>
+            <div class="w-100" data-aos="fade-up">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.632409728009!2d73.83737021436849!3d18.500302474623467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfb6f15cd1d5%3A0x5e7cc01f45a445ba!2zQVMgQm9ZJ1MgKOCkhuCkquCkoyDgpLjgpY3gpLU64KSkKQ!5e0!3m2!1sen!2sin!4v1575265275079!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            <div class="contact-form mb-4 mb-sm-5" data-aos="fade-up">
+                <div class="container">
+                    <div class="mt-40 mb-40">
+                        <h2 class="text-center  section-title">Get In Touch</h2>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form action="POST" data-nelify="true" class="d-flex flex-wrap">
+                                    <div class="form-group">
+                                        <label for="email">Your Name:</label>
+                                        <input type="text" autocomplete="off" class="form-control" id="email">
+                                    </div>
+                                    <div class="form-group email">
+                                        <label for="email">Email address:</label>
+                                        <input type="email" autocomplete="off" class="form-control" id="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Phone No:</label>
+                                        <input type="text" autocomplete="off" class="form-control" id="email">
+                                    </div>
+                                    <div class="form-group subject">
+                                        <label for="pwd">Subject:</label>
+                                        <input type="subject" autocomplete="off" class="form-control" id="pwd">
+                                    </div>
+                                    <div class="form-group comment">
+                                        <label for="comment">Comment:</label>
+                                        <textarea class="form-control" autocomplete="off" rows="5" id="comment"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
                         </div>
-                     </div>
-                   </div> 
+                    </div> 
                 </div>
+            </div>
            
         </section>
       <!-- Contact Us End Here -->
-      <!-- Footer Start here-->
-      <footer >
-            <div class="container pt-4 pb-4">
-              <div class="row">
-                  <div class="col-md-3 col-sm-2 col-4">
-                     <div class="footer-logo">
-                       <a href="index.html"><img src="images/logo.png" alt="" width="100%"></a>
-                     </div>
-                  </div>
-                  <div class="col-md-4 col-sm-4 col-8">
-                      <div class="quick-link">
-                          <h4 class="text-white">Quick Link</h4>
-                          <!-- Links -->
-                          <ul class="navbar-nav">
-                              <li class="nav-item">
-                              <a class="nav-link" href="#">Home</a>
-                              </li>
-                              <li class="nav-item">
-                              <a class="nav-link" href="#">About Us</a>
-                              </li>
-                              <li class="nav-item ">
-                                  <a class="nav-link " href="#">
-                                      Gallery
-                                  </a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="#">Media</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="#">Social Work</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="#">Contact Us</a>
-                              </li>            
-                          </ul>
-                      </div>
-                  </div>
-                  <div class="col-md-2 col-sm-3 col-6">
+       <!-- Footer Start here-->
+       <footer >
+        <div class="container pt-4 pb-4">
+            <div class=" row">
+                <div class="footer-wrapper w-100">
+                    <div class="footer-logo">
+                        <a href="index.html"><img src="images/logo.png" alt="Footer Logo" ></a>
+                    </div>
+                    <div class="quick-link">
+                        <h4 class="text-white sm-heading">Quick Link</h4>
+                        <!-- Links -->
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">About Us</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="gallery.html">
+                                    Gallery
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallery.html">Media</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="social-work.html">Social Work</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact-us.html">Contact Us</a>
+                            </li>            
+                        </ul>
+                    </div>
                     <div class="footer-follow">
-                        <h4 class="text-white">Follow</h4>
+                        <h4 class="text-white sm-heading">Follow</h4>
                         <div class="social-link ">
                             <a href="https://www.facebook.com" target="_blank">
                                 <i class="fab fa-facebook-f"></i>
@@ -260,39 +283,34 @@
                             </a>
                         </div>
                     </div>
-                  </div>
-                  <div class="col-md-3 col-sm-2 col-6">
-                     <div class="download d-flex flex-wrap">
-                          <h4 class="text-white">Download</h4>
-                          <div class="google-play">
-                              <a href=""><img src="images/googleplay.png" alt=""></a>
-                          </div>
-                          
-                     </div>
-                  </div>
-              </div>
+                    <div class="download">
+                        <div class="">
+                            <h4 class="text-white sm-heading">Download</h4>
+                            <div class="google-play">
+                                <a href="#" target="_blank"><img src="images/googleplay.png" class="google-play-icon"t=""></a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="bottom">
-              <div class="container">
-                  <p class="text-white m-0">Rastrawadi Party© 2019. All Rights Reserved</p>
-              </div>
+        </div>
+        <div class="bottom">
+            <div class="container">
+                <p class="text-white m-0">
+                    <a href="https://shivsena.org" target="_blank" >ShivSena</a> © 2020. All Rights Reserved
+                </p>
             </div>
-        </footer>
-       <!-- Footer End here-->
+        </div>
+    </footer>
+    <!-- Footer End here-->
     </main>
-    <script src="js/active-class.js"></script>
-    <script >
-        $(function(){
-        $(window).on("scroll" , function(){
-            if($(window).scrollTop() > 50){
-            $(".menu").addClass("bg-nav");
-            }
-            
-        else{
-            $(".menu").removeClass("bg-nav");
-        }
-        })
-    }); 
-    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/slick-carousel.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/dropdown.js"></script>
 </body>
 </html>
