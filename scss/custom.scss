@@ -18,14 +18,24 @@ $text-color: #333333;
 $twitter-bg-color: #1b95e0;
 
 
-// font 
 
-@mixin common-font{
-    font: {
-        color: $text-color;
-        weight: 800;
-        transform: capitalize;
-    }
+
+// MIXIN 
+
+// IMAGE RATIO
+
+@mixin image-ratio {
+    top: 0;
+    right: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@mixin image-wrapper {
+    position: relative;
+    overflow: hidden;
 }
 
 // GRADIENT COLOR
@@ -37,6 +47,15 @@ $list1: $white-color -20%, $white-color -7%,$primary 110%, $primary 50%;
     background: -moz-linear-gradient($direction, $list);
     background: -o-linear-gradient($direction, $list);
     background: linear-gradient($direction, $list);  
+}
+
+// FONT
+@mixin common-font{
+    font: {
+        color: $text-color;
+        weight: 800;
+        transform: capitalize;
+    }
 }
 
 @font-face {
@@ -209,7 +228,7 @@ a{
         text-transform: lowercase;
         transition: 0.3s;
         &:hover{
-            color:darken($primary , 8%);
+            color: $white-color;
         }
         i{
             font-size: 16px;
@@ -255,16 +274,10 @@ a{
             right: 32px;
         }
         .slide{
-            position: relative;
-            overflow: hidden;
+            @include image-wrapper;
             padding-bottom: 10%;
             img{
-                top: 0;
-                right: 0;
-                position: absolute;
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
+                @include image-ratio;
             }
         }   
         .slick-dots{
@@ -337,11 +350,11 @@ $transition-delay: 0.05s;
         z-index: 999;
         height: 100vh;
         &:before {
-        transform: translateY(-50%) rotate(45deg) scale(1);
+            transform: translateY(-50%) rotate(45deg) scale(1);
         }
 
         &:after {
-        transform: translateY(-50%) rotate(-45deg) scale(1);
+            transform: translateY(-50%) rotate(-45deg) scale(1);
         }
     }
 
@@ -521,16 +534,10 @@ $transition-delay: 0.05s;
     }   
 }
 .profile-image{
-    position: relative;
-    overflow: hidden;
+    @include image-wrapper;
     padding-bottom: 100%;
         img{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            object-fit: cover;
-            right: 0;
+            @include image-ratio;
         }
 }
 .background-image{
@@ -584,17 +591,11 @@ $transition-delay: 0.05s;
         font-size: 24px;
     }
     .gallery-image{
-        position: relative;
-        overflow: hidden;
+        @include image-wrapper;
         padding-bottom: 76%;
         margin-bottom: 25px;
             img{
-                position: absolute;
-                top: 0;
-                right: 0;
-                object-fit: cover;
-                height: 100%;
-                width: 100%;
+                @include image-ratio;
             }
     }
     .image {
@@ -641,16 +642,10 @@ $transition-delay: 0.05s;
             }
     }
     .news-big-image{
-        position: relative;
-        overflow: hidden;
+        @include image-wrapper;
         padding-bottom: 60%;
             img{
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                right: 0;
-                object-fit:cover;
+                @include image-ratio;
             }
     }
 }
@@ -680,6 +675,7 @@ form{
         font-size: 12px;
         color: $text-color;
         font-weight: 600;
+        text-transform: capitalize;
         margin-bottom: 8px;
     }
     .email, .subject{
@@ -759,7 +755,7 @@ footer{
                     font-size: 14px;
                     padding: 0 0 20px;
                     &:hover{
-                        color:darken($primary , 8%);
+                        color:$white-color;
                     }
                 }
             }
@@ -768,7 +764,6 @@ footer{
     .bottom{
         background:darken($black,25%);
         padding: 5px 0;
-        
         p{
             font-size: 12px;
             text-align: left;
@@ -851,16 +846,10 @@ footer{
 }
 .post-image{
     margin-bottom: 10px;
-    overflow: hidden;
-    position: relative;
+    @include image-wrapper;
     padding-bottom: 70%;
         img{
-            position: absolute;
-            top: 0;
-            right: 0;
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
+            @include image-ratio;
         }
 }
 /* ===================Social Work Details Page=================*/
@@ -873,16 +862,10 @@ footer{
         line-height: 24px;
     }
     .social-work-details-image{
-        position: relative;
-        overflow: hidden;
+        @include image-wrapper;
         padding-bottom: 56%;
             img{
-                position: absolute;
-                top: 0;
-                right: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
+                @include image-ratio;
             }
     }
     .sidebar{
@@ -1066,16 +1049,10 @@ footer{
 /* =============Recent Activity===============================*/
 
 .recent-activity-image{
-    position: relative;
-    overflow: hidden;
+    @include image-wrapper;
     padding-bottom: 56%;
     img{
-        position: absolute;
-        top: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
+        @include image-ratio;
     }
 }
 /* =============Media query===============================*/

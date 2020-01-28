@@ -8378,7 +8378,7 @@ a {
   text-transform: lowercase;
   transition: 0.3s; }
   .conatct-info a:hover, .social-link a:hover {
-    color: #371401; }
+    color: #fff; }
   .conatct-info a i, .social-link a i {
     font-size: 16px;
     position: relative;
@@ -8620,12 +8620,12 @@ header .navbar-nav .nav-item .nav-link.active {
   overflow: hidden;
   padding-bottom: 100%; }
   .profile-image img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
     top: 0;
-    object-fit: cover;
-    right: 0; }
+    right: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .background-image {
   background: url(../images/background.png) no-repeat;
@@ -8670,12 +8670,12 @@ header .navbar-nav .nav-item .nav-link.active {
     padding-bottom: 76%;
     margin-bottom: 25px; }
     .gallery .gallery-image img {
-      position: absolute;
       top: 0;
       right: 0;
-      object-fit: cover;
+      position: absolute;
       height: 100%;
-      width: 100%; }
+      width: 100%;
+      object-fit: cover; }
   .gallery .image {
     opacity: 1;
     display: block;
@@ -8715,11 +8715,11 @@ header .navbar-nav .nav-item .nav-link.active {
   overflow: hidden;
   padding-bottom: 60%; }
   .latest-news .news-big-image img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
     top: 0;
     right: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
     object-fit: cover; }
 
 .follow {
@@ -8745,6 +8745,7 @@ form label {
   font-size: 12px;
   color: #333333;
   font-weight: 600;
+  text-transform: capitalize;
   margin-bottom: 8px; }
 
 form .email, form .subject {
@@ -8798,7 +8799,7 @@ footer {
       font-size: 14px;
       padding: 0 0 20px; }
       footer .quick-link .navbar-nav .nav-item .nav-link:hover {
-        color: #371401; }
+        color: #fff; }
   footer .bottom {
     background: black;
     padding: 5px 0; }
@@ -8870,16 +8871,16 @@ footer {
 
 .post-image {
   margin-bottom: 10px;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
   padding-bottom: 70%; }
   .post-image img {
-    position: absolute;
     top: 0;
     right: 0;
-    object-fit: cover;
+    position: absolute;
+    height: 100%;
     width: 100%;
-    height: 100%; }
+    object-fit: cover; }
 
 /* ===================Social Work Details Page=================*/
 .social-work-details {
@@ -8893,11 +8894,11 @@ footer {
     overflow: hidden;
     padding-bottom: 56%; }
     .social-work-details .social-work-details-image img {
-      position: absolute;
       top: 0;
       right: 0;
-      width: 100%;
+      position: absolute;
       height: 100%;
+      width: 100%;
       object-fit: cover; }
   .social-work-details .sidebar {
     -webkit-box-shadow: -4px 7px 20px -2px rgba(0, 0, 0, 0.08);
@@ -9030,9 +9031,9 @@ footer {
   overflow: hidden;
   padding-bottom: 56%; }
   .recent-activity-image img {
-    position: absolute;
     top: 0;
     right: 0;
+    position: absolute;
     height: 100%;
     width: 100%;
     object-fit: cover; }
