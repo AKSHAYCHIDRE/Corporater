@@ -5,3 +5,10 @@ $('.slideshow').slick({
   arrows: true,
   autoplaySpeed: 4000
 });
+
+
+//  animation JS here
+
+AOS.init({
+  duration: 1500,
+})
