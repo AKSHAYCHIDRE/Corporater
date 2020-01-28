@@ -333,7 +333,7 @@ $transition-delay: 0.05s;
 #toggle:checked {
     //Any element you need to change the style if menu is open goes here, using the sibling selector (~)
     & ~ .toggle-container .button-toggle {
-        box-shadow: 6px 0 0 550px rgba(0, 0, 0, 0.63), inset 5px 5px 5px 550px rgba(0, 0, 0, 0.63);
+        box-shadow:6px 0 0 550px rgba(0, 0, 0, 0.80), inset 5px 5px 5px 550px rgba(0, 0, 0, 0.80);
         z-index: 999;
         height: 100vh;
         &:before {
