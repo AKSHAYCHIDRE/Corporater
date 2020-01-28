@@ -8439,7 +8439,7 @@ a {
   display: none; }
 
 #toggle:checked ~ .nav .nav-item-custom.active {
-  color: #5f2202; }
+  color: #fff; }
 
 header .navbar-nav .nav-item .nav-link {
   color: #fff;
@@ -8511,7 +8511,7 @@ header .navbar-nav .nav-item .nav-link.active {
       opacity: 0;
       font-size: 14px; }
     #toggle:checked ~ .nav .nav-item-custom:hover {
-      color: #371401;
+      color: #fff;
       text-decoration: none; }
     #toggle:checked ~ .nav .nav-item-custom span {
       font-size: 14px; }
