@@ -12,10 +12,20 @@
 $primary:#00923f; 
 $secondry: #ff8f2e;
 $tertiary: #e4e4e4;
+$gray: #f7f7f7;
 $white-color:#fff;
 $black-color: #000;
 $text-color: #333333;
 $twitter-bg-color: #1b95e0;
+
+
+// image function
+
+$baseUrl:'../images/';
+
+@function normalImg($Url){
+    @return url($baseUrl + $Url);
+}
 
 
 // font 
@@ -38,7 +48,6 @@ $list1: $white-color -20%, $white-color -7%,$primary 110%, $primary 50%;
     background: -o-linear-gradient($direction, $list);
     background: linear-gradient($direction, $list);  
 }
-
 @font-face {
     font-family: Montserrat-Regular;
     src: url(../fonts/Montserrat-Regular.ttf);
@@ -80,7 +89,7 @@ body{
     @include common-font;
         &:after{
             content: '';
-            border-bottom: 3px solid $primary;
+            border-bottom: 2px solid $primary;
             width: 50px;
             padding: 3px 0;
             display: block;
@@ -120,6 +129,13 @@ body{
 .mb-40{
     margin-bottom: 40px;
 }
+.pt-40{
+    padding-top: 40px;
+}
+.pb-40{
+    padding-bottom: 40px;
+}
+
 .dropdown-item{
     font-size: 14px;
     padding: 6px 26px;
@@ -159,6 +175,7 @@ body{
 .read-more-button{
     color:$primary;
     text-transform: capitalize;
+    font-weight: 800;
     font-size: 14px;
     &:hover{
         color: $black-color;
@@ -242,6 +259,7 @@ a{
 }
 .banner{
     .slideshow.slick-slider{
+        margin-bottom: 0;
         .slick-prev:before, .slick-next:before {
             color: $white;
         }
@@ -534,16 +552,19 @@ $transition-delay: 0.05s;
         }
 }
 .background-image{
-    background: url(../images/background.png) no-repeat;
+    background: normalImg('background.png');
+    background-repeat: no-repeat;
     background-position: 50% 50%;
     background-attachment: fixed;
 }
 .background{
-    background: url(../images/Video_bg.png) no-repeat;
+    background: normalImg('Video_bg.png');
+    background-repeat: no-repeat;
     padding: 20px;
     background-attachment: fixed;
     background-size: cover; 
 }
+
 //  video-section
 .video-section{
     .video-info{
@@ -569,9 +590,12 @@ $transition-delay: 0.05s;
 .mt-25{
     margin-top: 25px;
 }
+.recent-activity{
+    background: $gray;
+}
 // gallery
 .gallery{
-    margin-bottom: 22px;
+    // margin-bottom: 22px;
     img{
         margin-bottom: 28px;
     }
@@ -625,6 +649,7 @@ $transition-delay: 0.05s;
 
 // Latest News
 .latest-news{
+    background: $gray;
     .news-info{
         margin-left: 20px;
             p{
@@ -768,7 +793,7 @@ footer{
     .bottom{
         background:darken($black,25%);
         padding: 5px 0;
-        
+        border-top: 1px solid;
         p{
             font-size: 12px;
             text-align: left;
@@ -795,7 +820,7 @@ footer{
             margin-bottom: 6px;
                 &:after{
                     content: '';
-                    border-bottom: 3px solid $primary;
+                    border-bottom: 2px solid $primary;
                     width: 50px;
                     padding: 3px 0;
                     display: block;
@@ -806,7 +831,7 @@ footer{
     .md-heading{
         &:after{
             content: '';
-            border-bottom: 3px solid $primary;
+            border-bottom: 1px solid $primary;
             width: 100%;
             padding: 3px 0;
             display: block;       
@@ -949,7 +974,7 @@ footer{
         margin-bottom: 16px;
         &:after{
             content: '';
-            border-bottom: 3px solid $primary;
+            border-bottom: 2px solid $primary;
             width: 100%;
             padding: 3px 0;
             display: block;
@@ -1085,7 +1110,7 @@ footer{
     }
     
 }
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px){ 
     
     .section-title{
         margin-bottom: 20px;
@@ -1096,6 +1121,12 @@ footer{
     }
     .mb-40{
         margin-bottom: 30px;
+    }
+    .pt-40{
+        padding-top: 30px;
+    }
+    .pb-40{
+        padding-bottom: 30px;
     }
     // topbar css
     
@@ -1215,13 +1246,13 @@ footer{
            margin-bottom: 15px;
        }
    }
-   .recent-activity{
-    .recent-activity-desciption{
-       
-        button{
-            margin-bottom: 20px;
+    .recent-activity{
+        .recent-activity-desciption{
+            button{
+                margin-bottom: 20px;
+            }
         }
-    }
+    
   } 
   
   
@@ -1335,6 +1366,12 @@ footer{
     }
     .mb-40{
         margin-bottom: 20px;
+    }
+    .pt-40{
+        padding-top: 20px;
+    }
+    .pb-40{
+        padding-bottom: 20px;
     }
 }
 @media screen and (max-width: 576px){
